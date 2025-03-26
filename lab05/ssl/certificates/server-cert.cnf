@@ -1,0 +1,13 @@
+[req]
+default_bits = 2048          # Độ dài khóa RSA 2048-bit
+prompt = no                  # Không yêu cầu nhập thủ công khi tạo chứng chỉ
+default_md = sha256          # Sử dụng thuật toán băm SHA-256
+distinguished_name = dn      # Tham chiếu đến phần `[dn]` bên dưới
+
+[dn]
+C=US                         # Quốc gia (Country)
+ST=State                     # Bang/Tỉnh (State)
+L=Location                   # Địa phương (Location)
+O=Organization               # Tên tổ chức (Organization)
+OU=Organizational Unit       # Đơn vị tổ chức (Organizational Unit)
+CN=localhost                 # Tên miền (Common Name)
